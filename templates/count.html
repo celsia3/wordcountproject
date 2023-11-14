@@ -1,0 +1,16 @@
+
+<h1> Contagem de palavras</h1>
+<a href="{% url 'home' %}">Volte a pagina principal</a>
+<h2> A frase e {{fulltext}}</h2>
+<h1> e tem {{count}} palavras </h1>
+
+{%for word,count1 in wordsorted%}
+
+{{word}}
+<br/>
+{{count1}}
+<br/>
+
+{%endfor%}
+
+
